@@ -18,7 +18,7 @@ installed.
 
 %prep
 %setup -q -n %{name}
-sed -e -e '1s|env python|python|' -e "s|~/bin/acerhkgui/|%{_datadir}/%{name}/|" -i acerhkgui
+sed -e '1s|env python|python|' -e "s|~/bin/acerhkgui/|%{_datadir}/%{name}/|" -i acerhkgui
 
 %install
 rm -rf $RPM_BUILD_ROOT
