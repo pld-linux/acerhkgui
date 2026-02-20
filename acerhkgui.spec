@@ -1,7 +1,7 @@
 Summary:	Wifi and Bluetooth hardware switch GUI
 Name:		acerhkgui
 Version:	0.6
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Networking
 Source0:	http://dl.sourceforge.net/acerhkgui/%{name}-%{version}.zip
