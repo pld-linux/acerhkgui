@@ -1,9 +1,10 @@
 Summary:	Wifi and Bluetooth hardware switch GUI
 Name:		acerhkgui
 Version:	0.6
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Networking
+BuildArch:	noarch
 Source0:	http://dl.sourceforge.net/acerhkgui/%{name}-%{version}.zip
 # Source0-md5:	1aeb6918fb5c1583bc1585538f797234
 URL:		http://sourceforge.net/projects/acerhkgui/
@@ -18,7 +19,7 @@ installed.
 
 %prep
 %setup -q -n %{name}
-sed -e '1s|env python|python|' -e "s|~/bin/acerhkgui/|%{_datadir}/%{name}/|" -i acerhkgui
+sed -e '1s|env python|python2|' -e "s|~/bin/acerhkgui/|%{_datadir}/%{name}/|" -i acerhkgui
 
 %install
 rm -rf $RPM_BUILD_ROOT
